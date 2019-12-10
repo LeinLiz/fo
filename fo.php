@@ -45,8 +45,8 @@ $headers[] = "X-Location-Accuracy: 3.0";
                 echo "\e[92m[+] Token Tersimpan di -> ".$live." \n\n";
                 
                 // SANTAI19
-                echo "\e[96m[!] Proses Reedem Voucher 20+10 : WADAWGOJEK \n";
-                $data3 = '{"promo_code":"WADAWGOJEK"}';
+                echo "\e[96m[!] Proses Reedem Voucher 20+10 : GOFOODHEMAT19 \n";
+                $data3 = '{"promo_code":"GOFOODHEMAT19"}';
                 $claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
                 $claims = json_decode($claim[0]); 
                 if($claims->success == true) 
